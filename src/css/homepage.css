@@ -9,7 +9,9 @@
 		gulp
 		gulp-sass
 */
-body { background-color: yellow; }
+body { background-color: purple; }
+
+body, ul { margin: 0; padding: 0; }
 
 h1 { color: red; }
 
