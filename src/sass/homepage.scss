@@ -1,0 +1,17 @@
+/*
+预处理
+	sass
+	less
+	stylus
+
+	编译Sass文件所需工具：
+		gulp
+		gulp-sass
+*/	
+@import 'reset.scss';	
+h1{
+	color:red;
+}
+h2{
+	color:green;
+}
