@@ -1,0 +1,28 @@
+{
+  "name": "codingtwo",
+  "version": "1.0.0",
+  "description": "用于git,gulp,sass学习搭建项目",
+  "main": "gulpfile.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.coding.net:activekid/codingtwo.git"
+  },
+  "keywords": [
+    "gulp-sass",
+    "git",
+    "中酒项目"
+  ],
+  "author": "lizhiwei",
+  "license": "ISC"
+}
