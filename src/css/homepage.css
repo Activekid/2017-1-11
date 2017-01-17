@@ -9,26 +9,43 @@
 		gulp
 		gulp-sass
 */
-body {
-  background-color: #f5f5f5;
-}
-
-body, ul {
+body, h1, h2, h3, p, ul, ol, form, fieldset, figure {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+
+ul, ol {
+  list-style: outside none none;
 }
 
 a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
+.none {
+  display: none;
+}
+
+.sm-visible {
+  display: none;
+}
+
+.clearfix:after {
+  content: ".";
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
 }
 
 .wrap {
   width: 1190px;
-  margin: 0,auto;
+  margin: 0 auto;
 }
 
 header {
@@ -73,40 +90,84 @@ header .search-bar .hot-search a {
   color: black;
 }
 
-.nav-bar .nav-content .nav {
-  float: right;
-  width: 990px;
+.nav-bar .cate-all {
+  position: relative;
+  font-size: 17px;
   height: 35px;
+  line-height: 35px;
+  background: #dd0207;
+}
+
+.nav-bar .cate-all .nav {
+  float: right;
+  height: 35px;
+  width: 990px;
   line-height: 35px;
   font-size: 17px;
   background: #dd0207;
-  color: white;
+  color: black;
   margin-right: 80px;
 }
 
-.nav-bar .nav-content .nav ._banner {
+.nav-bar .cate-all .nav ._banner {
+  float: left;
+  margin-left: 40px;
+  width: 120px;
+}
+
+.nav-bar .cate-all .nav ._banner a {
+  color: yellow;
+}
+
+.nav-bar .cate-all .cl {
+  padding-left: 120px;
+  float: left;
+  color: white;
+}
+
+.nav-bar .nav-content .category .mc {
+  z-index: 99;
+  float: left;
+  width: 200px;
+  height: 80;
+  background-color: #3c4750;
+  position: absolute;
+  left: 82px;
+}
+
+.nav-bar .nav-content .category .mc a {
+  color: #e2e3e5;
+}
+
+.nav-bar .nav-content .category .mc .item {
+  height: 81.5px;
+}
+
+.content_re {
+  padding: 10px;
+}
+
+.content_re .floor-hd {
+  position: relative;
+}
+
+.content_re .floor-hd ul {
   float: left;
 }
 
-.nav-bar .nav-content .nav ._banner a {
-  color: white;
-}
-
-.nav-bar .nav-content .categorys {
-  display: inline-block;
-  width: 200px;
-  position: absolute;
-  left: 80px;
-}
-
-.nav-bar .nav-content .categorys .cate-all {
-  font-size: 17px;
+.content_re .floor-hd ul li {
+  float: left;
+  boder: solid 2px 1px 1px 1px #fff;
+  width: 185px;
   height: 35px;
   line-height: 35px;
-  text-align: center;
-  background: #dd0207;
 }
 
-.nav-bar .nav-content .categorys .cate-all a {
-  color: white;
+.content_re .floor-hd .gengduo {
+  float: right;
+}
+
+.content_re .hot_recommand .cl li {
+  float: left;
+  padding: 0 8px 10px 0;
 }

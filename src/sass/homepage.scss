@@ -39,40 +39,80 @@ header{
 	}
 }
 .nav-bar{
-	.nav-content{
-		
-		.nav{
-			float:right;
-			width:990px;
-			height:35px;
-			line-height:35px;
-			font-size:17px;
+		.cate-all{
+			position: relative;
+			font-size:17px;height:35px;line-height:35px;
 			background:#dd0207;
-			color:white;
-			margin-right:80px;
-			._banner{
+			.nav{
+				float:right;
+				height:35px;
+				width:990px;
+				line-height:35px;
+				font-size:17px;
+				background:#dd0207;
+				color:black;
+				margin-right:80px;
+				._banner{
+					float:left;
+					margin-left:40px;
+					width:120px;
+					a{
+						color:yellow;
+					}
+				}	
+			}
+			.cl{
+				padding-left:120px;
 				float:left;
-				a{
-					color:white;
-				}
+				color:white;
 			}
 		}
-		.categorys{
-			display:inline-block;
-			width:200px;
-			position:absolute;
-			left:80px;
-			.cate-all{
-				a{
-					color:white;
-				}
-				font-size:17px;height:35px;line-height:35px;text-align:center;
-				background:#dd0207;
-			}
+		.nav-content{
+			
+			
+			
 			.category{
 				.mc{
-
+					z-index:99;
+					float:left;
+					width:200px;
+					height:80;
+					background-color:#3c4750;
+					position:absolute;
+					left:82px;
+					a{
+						color:#e2e3e5;
+					}
+					.item{
+						height:81.5px;
+					}
 				}
+			}
+		}	
+}
+.content_re{
+	padding:10px;
+	.floor-hd{
+		position:relative;
+		ul{
+			float:left;
+			li{
+				float:left;
+				boder:solid 2px 1px 1px 1px #fff;
+				width:185px;
+				height:35px;
+				line-height:35px;
+			}
+		}
+		.gengduo{
+			float:right;
+		}
+	}
+	.hot_recommand{
+		.cl{
+			li{
+				float:left;
+				padding:0 8px 10px 0;
 			}
 		}
 	}
