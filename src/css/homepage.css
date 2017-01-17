@@ -9,10 +9,104 @@
 		gulp
 		gulp-sass
 */
-body { background-color: purple; }
+body {
+  background-color: #f5f5f5;
+}
 
-body, ul { margin: 0; padding: 0; }
+body, ul {
+  margin: 0;
+  padding: 0;
+}
 
-h1 { color: red; }
+a {
+  text-decoration: none;
+}
 
-h2 { color: green; }
+ul {
+  list-style: none;
+}
+
+.wrap {
+  width: 1190px;
+  margin: 0,auto;
+}
+
+header {
+  background: url(../img/head_bg.jpg) no-repeat center;
+  height: 210px;
+  position: relative;
+}
+
+header .search-bar {
+  position: absolute;
+  bottom: 38px;
+  left: 440px;
+}
+
+header .search-bar .text {
+  width: 450px;
+  height: 34px;
+  padding-left: 12px;
+  position: relative;
+  background-color: #fff;
+  line-height: 34px;
+  color: #333333;
+  font-size: 12px;
+  border: bold 2px red;
+}
+
+header .search-bar .button {
+  background: #dd0207;
+  width: 67px;
+  font-size: 15px;
+  color: #fff;
+  cursor: pointer;
+  line-height: 38px;
+  letter-spacing: 2px;
+  border-left: 1px solid #f45670;
+  float: right;
+  border: 0 none;
+}
+
+header .search-bar .hot-search a {
+  font-size: 14px;
+  color: black;
+}
+
+.nav-bar .nav-content .nav {
+  float: right;
+  width: 990px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 17px;
+  background: #dd0207;
+  color: white;
+  margin-right: 80px;
+}
+
+.nav-bar .nav-content .nav ._banner {
+  float: left;
+}
+
+.nav-bar .nav-content .nav ._banner a {
+  color: white;
+}
+
+.nav-bar .nav-content .categorys {
+  display: inline-block;
+  width: 200px;
+  position: absolute;
+  left: 80px;
+}
+
+.nav-bar .nav-content .categorys .cate-all {
+  font-size: 17px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #dd0207;
+}
+
+.nav-bar .nav-content .categorys .cate-all a {
+  color: white;
+}

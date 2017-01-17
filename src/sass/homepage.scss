@@ -8,10 +8,72 @@
 		gulp
 		gulp-sass
 */	
-@import 'reset.scss';	
-h1{
-	color:red;
+@import 'reset.scss';
+@import 'common.scss';	
+header{
+	background:url(../img/head_bg.jpg) no-repeat center;height:210px;
+	position:relative;
+	.search-bar{
+		position:absolute;bottom: 38px;left: 440px;
+		.text{
+			width: 450px;height: 34px;padding-left: 12px;position: relative;background-color: #fff;line-height: 34px;color: rgb(51, 51, 51);
+			font-size: 12px;
+			border:bold 2px red;
+		}
+		.button{
+			background: #dd0207;
+		    width: 67px;
+		    font-size: 15px;
+		    color: #fff;
+		    cursor: pointer;
+		    line-height: 38px;
+		    letter-spacing: 2px;
+		    border-left: 1px solid #f45670;
+		    float: right;
+		    border: 0 none;
+		}
+		.hot-search a{
+			font-size:14px;
+			color:black;
+		}
+	}
 }
-h2{
-	color:green;
+.nav-bar{
+	.nav-content{
+		
+		.nav{
+			float:right;
+			width:990px;
+			height:35px;
+			line-height:35px;
+			font-size:17px;
+			background:#dd0207;
+			color:white;
+			margin-right:80px;
+			._banner{
+				float:left;
+				a{
+					color:white;
+				}
+			}
+		}
+		.categorys{
+			display:inline-block;
+			width:200px;
+			position:absolute;
+			left:80px;
+			.cate-all{
+				a{
+					color:white;
+				}
+				font-size:17px;height:35px;line-height:35px;text-align:center;
+				background:#dd0207;
+			}
+			.category{
+				.mc{
+
+				}
+			}
+		}
+	}
 }
