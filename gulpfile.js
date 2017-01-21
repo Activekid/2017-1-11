@@ -15,14 +15,15 @@ gulp.task('jtSass',function(){
 //利用'browser-sync'创建静态服务器
 gulp.task('server',function(){
 	browserSync({
-		/*server:{
+		server:{
 			baseDir:"./src"//设置当前目录为静态服务器
-		},*/
-		port:4000,
+		},
+		//port:4000,
 		//代理 localhost=192.168.0.100,,'./src/*.php'
-		proxy:'http://localhost/codingtwo/src/',
+		//proxy:'http://localhost/codingtwo/src/',
 		//监听html文档
-		files:['./src/*.html'],
+		//files:['./src/html/*.html'],
+		files:['./src/html/register.html'],
 	});
 	gulp.watch('src/sass/*.scss',['buildSass']);
 })

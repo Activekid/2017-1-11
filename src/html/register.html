@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>免费注册</title>
+	<style>
+		.error{
+			color:#f00;
+		}
+	</style>
+	<link rel="stylesheet" href="../css/homepage.css">
+	<script src="../assets/jquery-3.1.1.js"></script>
+	<script src="../assets/jquery.validate.js"></script>
+	<script src="../assets/messages_zh.js"></script>
+	<script>
+		$(function(){
+			// **学会查看文档
+			$('form').validate({
+				rules:{
+					username:{
+						required:true,
+						rangelength:[5,10]
+					},
+					email:{
+						// 验证规则
+						email:true,
+						required:true
+					}
+				},
+				messages:{
+					username:{
+						required:'快给我写！',
+						rangelength:'长度{0}-{1}'
+					}
+				}
+			});
+
+
+			// var arr = [5,10]
+			// '长度{0}-{1}'.replace(/\{(\d)\}/g,arr['$'])
+		})
+	</script>
+</head>
+<body style="background-color:#eef3fa">
+	<div id="top" class="r_top">
+		<div class="r_wrap">
+			<a href="#" class="collection">收藏商城</a>
+			<div class="top_left">
+				<span>您好！欢迎来到商城</span>
+				<a href="#">[登录]</a>
+				<a href="#">[免费注册]</a>
+			</div>
+		</div>
+	</div>
+	<div class="r_logo r_wrap">
+		<img src="../img/zjlogo.png"><span class="w_register">欢迎注册</span>
+	</div>
+	<div class="f_top r_wrap">
+		<span class="register_top">我已经注册，现在就 登录</span>
+	</div>
+	<div class="r_form r_wrap">
+		<form action="">
+			<p>
+				<label for="username">手机号码</label>
+				<input type="text" id="phone" name="phone">
+			</p>
+			<p>
+				<label for="email">email</label>
+				<input type="email" id="email" name="email">
+			</p>
+			<p>
+				<label for="password">请设置密码</label>
+				<input type="password" id="password" name="password">
+			</p>
+			<button type="submit">提交</button>
+		</form>
+	</div>
+	
+</body>
+</html>
