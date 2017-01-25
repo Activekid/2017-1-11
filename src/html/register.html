@@ -12,34 +12,37 @@
 	<script src="../assets/jquery-3.1.1.js"></script>
 	<script src="../assets/jquery.validate.js"></script>
 	<script src="../assets/messages_zh.js"></script>
-	<script>
+	<!-- <script>
 		$(function(){
 			// **学会查看文档
 			$('form').validate({
 				rules:{
-					username:{
+					phone:{
 						required:true,
-						rangelength:[5,10]
+						//rangelength:[11],
+						length:[11],
+						//$('#phone').val().match(/1[34578]\d{9}/g)
 					},
-					email:{
+	
+					password:{
 						// 验证规则
-						email:true,
+						password:true,
 						required:true
 					}
 				},
 				messages:{
-					username:{
-						required:'快给我写！',
-						rangelength:'长度{0}-{1}'
+					phone:{
+						required:'请输入手机号码！',
+						//rangelength:'长度{0}-{1}'
 					}
 				}
 			});
-
-
+	
+	
 			// var arr = [5,10]
 			// '长度{0}-{1}'.replace(/\{(\d)\}/g,arr['$'])
 		})
-	</script>
+	</script> -->
 </head>
 <body style="background-color:#eef3fa">
 	<div id="top" class="r_top">
@@ -60,21 +63,47 @@
 	</div>
 	<div class="r_form r_wrap">
 		<form action="">
-			<p>
-				<label for="username">手机号码</label>
+			<p class="cell-phone_item">
+				<label for="phone">手机号码：</label>
 				<input type="text" id="phone" name="phone">
 			</p>
-			<p>
-				<label for="email">email</label>
-				<input type="email" id="email" name="email">
-			</p>
-			<p>
-				<label for="password">请设置密码</label>
+			<!-- <p class="gra_verification">
+				<label for="verification">图形验证：</label>
+				<input type="text" id="verification" name="verification">
+			</p> -->
+			<p class="set_password">
+				<label for="password">请设置密码：</label>
 				<input type="password" id="password" name="password">
 			</p>
-			<button type="submit">提交</button>
+			<!-- <p class="confirm_password">
+				<label for="c_password">请确认密码：</label>
+				<input type="password" id="c_password" name="password">
+			</p>
+			<p class="phone_verification">
+				<label for="p_verification">手机验证码：</label>
+				<input type="text" id="p_verification" name="verification">
+			</p> -->
+			<button type="button" id="submit">立即注册</button>
 		</form>
 	</div>
-	
+	<script type="text/javascript">
+		$(function(){
+			$('#submit').click(function(){
+				$.post('register.php',{
+					//email: $('#email').val(),
+					password: $('#password').val(),
+					phone: $('#phone').val()
+				}, function(response){
+					var $obj = eval('(' + response + ')');
+					//console.log($obj);
+					if($obj.state){
+						alert('注册成功！');
+					} else {
+						alert($obj.message);
+					}
+				})				
+			})
+		})
+	</script>
 </body>
 </html>

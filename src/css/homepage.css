@@ -230,3 +230,28 @@ header .search-bar .hot-search a {
   padding: 30px 0 20px 0;
   border: solid #dddddd 1px;
 }
+
+.r_form .cell-phone_item {
+  height: 70px;
+  line-height: 70px;
+}
+
+.r_form .gra_verification {
+  height: 70px;
+  line-height: 70px;
+}
+
+.r_form .set_password {
+  height: 70px;
+  line-height: 70px;
+}
+
+.r_form .confirm_password {
+  height: 70px;
+  line-height: 70px;
+}
+
+.r_form .phone_verification {
+  height: 70px;
+  line-height: 70px;
+}
