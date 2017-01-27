@@ -23,7 +23,7 @@ gulp.task('server',function(){
 		//proxy:'http://localhost/codingtwo/src/',
 		//监听html文档
 		//files:['./src/html/*.html'],
-		files:['./src/html/register.html'],
+		files:['./src/**/*.html'],
 	});
 	gulp.watch('src/sass/*.scss',['buildSass']);
 })

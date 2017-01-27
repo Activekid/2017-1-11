@@ -59,6 +59,7 @@ header {
 }
 
 header .search-bar {
+  margin: 0 auto;
   position: absolute;
   bottom: 38px;
   left: 440px;
@@ -92,6 +93,10 @@ header .search-bar .button {
 header .search-bar .hot-search a {
   font-size: 14px;
   color: black;
+}
+
+.nav-bar {
+  margin: 0 auto;
 }
 
 .nav-bar .cate-all {
@@ -176,7 +181,7 @@ header .search-bar .hot-search a {
   padding: 0 8px 10px 0;
 }
 
-/*登录界面样式*/
+/*注册界面样式*/
 .r_top {
   height: 40px;
   background-color: #F7F7F7;
@@ -254,4 +259,34 @@ header .search-bar .hot-search a {
 .r_form .phone_verification {
   height: 70px;
   line-height: 70px;
+}
+
+/*登录界面样式*/
+.login {
+  border: 4px solid #e1e1e1;
+}
+
+.login .l_form {
+  height: 354px;
+  width: 321px;
+  overflow: hidden;
+  position: relative;
+  float: right;
+  margin: 20px 50px 0 0;
+}
+
+.login .l_form .tips {
+  float: right;
+}
+
+.login .l_form .text-area {
+  margin: 10px 0;
+  width: 320px;
+  height: 40px;
+  float: right;
+}
+
+.login .l_form .text-area .text {
+  width: 320px;
+  height: 40px;
 }
