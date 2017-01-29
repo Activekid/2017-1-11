@@ -52,6 +52,10 @@ a {
   margin: 0 auto;
 }
 
+.hide {
+  overflow: hidden;
+}
+
 header {
   background: url(../img/head_bg.jpg) no-repeat center;
   height: 210px;
@@ -179,6 +183,154 @@ header .search-bar .hot-search a {
 .content_re .hot_recommand .cl li {
   float: left;
   padding: 0 8px 10px 0;
+}
+
+.content_re .gstreet .f_alcohol {
+  display: -webkit-box;
+  height: 300px;
+  padding-top: 10px;
+}
+
+.content_re .gstreet .f_alcohol div {
+  height: 300px;
+}
+
+.content_re .gstreet .f_alcohol div:nth-child(1) {
+  -webkit-box-flex: 1;
+}
+
+.content_re .gstreet .f_alcohol div:nth-child(2) {
+  -webkit-box-flex: 1;
+}
+
+.content_re .gstreet .f_alcohol div:nth-child(3) {
+  -webkit-box-flex: 1;
+}
+
+.content_re .gstreet .f_alcohol div:nth-child(4) {
+  -webkit-box-flex: 1;
+}
+
+.content_re .gstreet .f_alcohol div:nth-child(5) {
+  -webkit-box-flex: 1;
+}
+
+.content_re .helpchoose {
+  margin-bottom: 20px;
+}
+
+.content_re .helpchoose .h_top .h3 {
+  display: inline-block;
+}
+
+.content_re .helpchoose .h_top .h_nav {
+  width: 684px;
+  float: right;
+}
+
+.content_re .helpchoose .h_top .h_nav li {
+  float: left;
+  margin-left: 50px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.content_re .helpchoose .h_content .content1 {
+  height: 450px;
+  width: 230px;
+  display: inline-block;
+  position: relative;
+}
+
+.content_re .helpchoose .h_content .content1 .cata-flo {
+  position: relative;
+  top: -300px;
+}
+
+.content_re .helpchoose .h_content .content1 .cata-flo ul {
+  display: inline-block;
+}
+
+.content_re .helpchoose .h_content .content1 .cata-flo ul li {
+  width: 84px;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 20px;
+}
+
+.content_re .helpchoose .h_content .content1 .scroll-A {
+  position: relative;
+  top: -270px;
+  margin-left: 20px;
+}
+
+.content_re .helpchoose .h_content .content2 {
+  display: inline-block;
+  margin-left: 0px;
+  width: 470px;
+}
+
+.content_re .helpchoose .h_content .content-r {
+  display: inline-block;
+  width: 480px;
+}
+
+.content_re .helpchoose .h_content .content-r .content3 {
+  display: inline-block;
+  width: 230px;
+  margin-left: 0px;
+}
+
+.content_re .helpchoose .h_content .content4, .content_re .helpchoose .h_content .content5, .content_re .helpchoose .h_content .content6 {
+  display: inline-block;
+}
+
+.content_re .brand {
+  margin-bottom: 20px;
+}
+
+.content_re .brand .b_left {
+  float: left;
+}
+
+.content_re .brand .b_right {
+  float: right;
+}
+
+footer .distribution {
+  background: #f8f8f8;
+}
+
+footer .distribution ul li {
+  display: inline-block;
+  position: relative;
+  width: 146px;
+  height: 45px;
+  margin: 33px 48px 0 0;
+}
+
+footer .distribution ul li span {
+  display: inline-block;
+  width: 55px;
+  height: 40px;
+  background: url(img/icon.png) 0 -37px no-repeat;
+}
+
+footer .distribution ul li p, footer .distribution ul li h3 {
+  display: inline-block;
+}
+
+footer .distribution ul li h3 {
+  position: relative;
+  top: -23px;
+  left: 0px;
+}
+
+footer .distribution ul li p {
+  position: relative;
+  left: 52px;
+  top: -23px;
+  font-size: 16px;
 }
 
 /*注册界面样式*/

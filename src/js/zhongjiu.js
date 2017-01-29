@@ -8,5 +8,14 @@
 			width:1370,
 			height:491
 		});
+		$('.scroll-A').gdscarousel({
+			imglist:['img/r1.jpg','img/r2.jpg','img/r3.jpg'],
+			page:'center',
+			type:'fade',
+			showButton:true,
+			width:188,
+			height:142,
+			autoPlay:false
+		});
 	});
 })(jQuery);
