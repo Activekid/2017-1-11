@@ -9,8 +9,9 @@ var xhr = new XMLHttpRequest();
 			for(var i=0;i<res.length;i++){
 				var li = document.createElement('li');
 				li.innerHTML = '<div class="pic"><img src="'+res[i].src+'"/></div><p>' + res[i].price + '</p><p>成交：' + res[i].counts + '笔</p><p>' + res[i].name + '</p>';
-
+				li.style.display = 'inline-block';
 				ul.appendChild(li);
+				ul.className = 'wrap';
 			}
 
 			document.body.appendChild(ul);

@@ -3,8 +3,56 @@
 <head>
 	<meta charset="UTF-8">
 	<title>产品详情</title>
+	<link rel="stylesheet" href="../css/homepage.css">
+    <script src="../assets/jquery-3.1.1.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script type="text/javascript" class="library" src="../js/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" class="library" src="../js/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" class="library" src="../js/fangdajing.js"></script>
 </head>
 <body>
-	
+	<!-- top -->
+    <div class="top wrap"><span>您好，欢迎来到 中酒网！</span><a href="#">去买家中心</a><a href="#">请登录</a><span><img src=""></span><a href="#">免费注册</a></div>
+   <!--  header -->
+    <header>
+        <div class="wrap">
+        	<div id="search-bar" class="search-bar">
+	            <input type="text" id="searchBox" class="text" name="" value="" placeholder="茅台">
+	            <input type="button" id="searchBtn" class="button" value="搜索">
+	            <div class="hot-search">
+	                <a href="#" class="active">茅台醇</a>
+	                <a href="#">茅台飞天</a>
+	                <a href="#">五粮液</a>
+	                <a href="#">五星级</a>
+	                <a href="#">牛栏山</a>
+	                <a href="#">红星</a>
+	                <a href="#">泸州老窖</a>
+	                <a href="#">国窖1573</a>
+	                <a href="#">洋河</a>
+	                <a href="#">天佑德</a>
+	                <a href="#">拉菲</a>
+	                <a href="#">礼盒</a>
+	            </div>
+	        </div>
+        </div>
+    </header>
+	<div class="con-FangDa" id="fangdajing">
+	  <div class="con-fangDaIMg">
+	  	<!-- 正常显示的图片-->
+	  	<img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/1_350.png">
+	    <!-- 滑块-->  
+	    <div class="magnifyingBegin"></div>
+	    <!-- 放大镜显示的图片 -->
+	    <div class="magnifyingShow"><img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/1_350.png"></div>
+	  </div>
+	  
+	  <ul class="con-FangDa-ImgList">
+	    <!-- 图片显示列表 -->
+	    <li class="active"><img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/1_50.png" data-bigimg="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/1_350.png"></li>
+	    <li><img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/2_50.png" data-bigimg="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/2_350.png"></li>
+	    <li><img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/3_50.png" data-bigimg="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/3.png"></li>
+	    <li><img src="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/4_50.png" data-bigimg="http://img6.zhongjiu.cn/resourceb2b2c/Storage/Shop/1/Products/3883/4_350.png"></li>
+	  </ul>
+	</div>
 </body>
 </html>
