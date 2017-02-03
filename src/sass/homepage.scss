@@ -251,6 +251,21 @@ footer{
 		}
 	}
 }
+/*产品详情页面*/
+.de_center{
+	position:relative;
+	top:0;
+	h1{
+		background: url(http://www.zhongjiu.cn/Areas/Web/Images/price-info_bg.jpg);
+	    height: 56px;
+	    line-height: 56px;
+	    text-align: right;
+	    color:red;
+	}
+	.t{
+		background: url(http://www.zhongjiu.cn/Areas/Web/Images/price-info_bg.jpg);
+	}
+}
 /*注册界面样式*/
 .r_top{
 	height:40px;
