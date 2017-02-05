@@ -86,7 +86,7 @@
 
 
 		// 删除商品
-	//	oCarList.onclick = function(e){
+		oCarList.onclick = function(e){
 			e = e || window.event;
 			var target = e.target || e.srcElement;
 
@@ -113,7 +113,7 @@
 				// 删除li节点
 				currentLi.parentElement.removeChild(currentLi);
 			}
-	//	}
+		}
 
 		// 清空购物车
 		// 1、删除DOM节点
@@ -128,7 +128,7 @@
 			document.cookie = 'carlist=xx;expires=' + now;
 		}
 	}
-		
+	
 	</script>
 </head>
 <body>

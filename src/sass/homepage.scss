@@ -213,6 +213,17 @@ header{
 		.b_right{
 			float:right;
 		}
+		.b_carousel{
+			.bc1{
+				padding:20px 0px;
+				width:630px;
+				li{
+					float:left;
+					width:110px;
+					padding:30px 5px;
+				}
+			}
+		}
 	}
 
 }
@@ -247,6 +258,72 @@ footer{
     				top: -23px;
     				font-size:16px;
 				}
+			}
+		}
+	}
+	.introduce{
+		background:#eee;
+		.intro_all{
+			padding-top:35px;
+			&>li{
+				float:left;
+			}
+			.pic{
+				width:200px;
+				li{
+					padding:10px 0;
+				}
+			}
+			.shop,.dis,.pay,.server,.protect{
+				width:141px;
+				li{
+					padding:5px 0;
+				}
+			}
+			.erwei{
+				width:110px;
+				padding-left:30px;
+				li{
+					padding:5px 0;
+				}
+			}
+		}
+	}
+	.navbar{
+		background-color:#313131;
+		.submenu{
+
+			height:40px;
+			line-height:40px;
+			text-align:center;
+			li:first-child{
+				border:none;
+			}
+			li{
+				height:20px;
+				line-height:20px;
+				margin-top:10px;
+				display:inline-block;
+				width:85px;
+				border-left:solid 1px white;
+				a{
+					color:white;
+					font-size:15px;
+				}
+			}
+		}
+	}
+	.conect{
+		.copyright{
+			p{
+				font-size:12px;
+				text-align:center;
+				height:28px;
+				line-height:28px;
+			}
+			.beian{
+				text-align:center;
+				margin-top:15px;
 			}
 		}
 	}

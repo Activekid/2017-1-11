@@ -301,6 +301,17 @@ header .search-bar .hot-search a {
   float: right;
 }
 
+.content_re .brand .b_carousel .bc1 {
+  padding: 20px 0px;
+  width: 630px;
+}
+
+.content_re .brand .b_carousel .bc1 li {
+  float: left;
+  width: 110px;
+  padding: 30px 5px;
+}
+
 footer .distribution {
   background: #f8f8f8;
 }
@@ -335,6 +346,83 @@ footer .distribution ul li p {
   left: 52px;
   top: -23px;
   font-size: 16px;
+}
+
+footer .introduce {
+  background: #eee;
+}
+
+footer .introduce .intro_all {
+  padding-top: 35px;
+}
+
+footer .introduce .intro_all > li {
+  float: left;
+}
+
+footer .introduce .intro_all .pic {
+  width: 200px;
+}
+
+footer .introduce .intro_all .pic li {
+  padding: 10px 0;
+}
+
+footer .introduce .intro_all .shop, footer .introduce .intro_all .dis, footer .introduce .intro_all .pay, footer .introduce .intro_all .server, footer .introduce .intro_all .protect {
+  width: 141px;
+}
+
+footer .introduce .intro_all .shop li, footer .introduce .intro_all .dis li, footer .introduce .intro_all .pay li, footer .introduce .intro_all .server li, footer .introduce .intro_all .protect li {
+  padding: 5px 0;
+}
+
+footer .introduce .intro_all .erwei {
+  width: 110px;
+  padding-left: 30px;
+}
+
+footer .introduce .intro_all .erwei li {
+  padding: 5px 0;
+}
+
+footer .navbar {
+  background-color: #313131;
+}
+
+footer .navbar .submenu {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+footer .navbar .submenu li:first-child {
+  border: none;
+}
+
+footer .navbar .submenu li {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  width: 85px;
+  border-left: solid 1px white;
+}
+
+footer .navbar .submenu li a {
+  color: white;
+  font-size: 15px;
+}
+
+footer .conect .copyright p {
+  font-size: 12px;
+  text-align: center;
+  height: 28px;
+  line-height: 28px;
+}
+
+footer .conect .copyright .beian {
+  text-align: center;
+  margin-top: 15px;
 }
 
 /*产品详情页面*/

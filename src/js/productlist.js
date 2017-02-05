@@ -1,4 +1,4 @@
-var xhr = new XMLHttpRequest();
+/*var xhr = new XMLHttpRequest();
 
 	xhr.onreadystatechange = function(){
 		if(xhr.readyState === 4 && xhr.status === 200){
@@ -19,4 +19,19 @@ var xhr = new XMLHttpRequest();
 	}
 
 	xhr.open('get','../data/product.json',true);
-	xhr.send();
+	xhr.send();*/
+	;(function($){
+		$(function(){
+			$.post('../html/goodslist.php',{page:1},function(response){
+				console.log(response);
+				var res = JSON.parse(response);
+				var $ul = $('<ul/>').addClass('wrap');
+				$.each(res,function(idx,item){
+					
+					var $li = $('<li/>').addClass('inline').html('<div class="pic"><img src="'+item.src+'"/></div><p>' + item.price + '</p><p>成交：' + item.counts + '笔</p><p>' + item.name + '</p>');
+					$ul.append($li);
+				});
+				$('body').append($ul);
+			})
+		});
+	})(jQuery);
