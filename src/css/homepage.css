@@ -425,6 +425,26 @@ footer .conect .copyright .beian {
   margin-top: 15px;
 }
 
+/*产品列表页*/
+.page {
+  text-align: center;
+}
+
+.page .clk {
+  color: white;
+  background: red;
+}
+
+.page span {
+  display: inline-block;
+  border: solid 1px black;
+  color: white;
+  background: gray;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+
 /*产品详情页面*/
 .de_center {
   position: relative;
