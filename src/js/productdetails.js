@@ -21,8 +21,11 @@ window.onload = function(){
 		jian.onclick = function(){
 			countH--;
 			console.log('jian');
+
 			if(countH <= 0){
-				countH === 0;
+				console.log(typeof (countH === 0));
+
+				countH = 0;
 			}
 			count.innerHTML = countH;
 		}
