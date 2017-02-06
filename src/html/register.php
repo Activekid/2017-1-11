@@ -4,9 +4,10 @@
 
 	//判断当前 email 是否已存在数据表中
 	$emailCheck = format("select * from tb2 where phone='{0}'", $_POST["phone"]);
+	//$result接收query（）中return的结果
 	$result = query($emailCheck);
 
-	//当前 email 不存在，执行插入操作
+	//当前 phone 不存在，执行插入操作
 	if(count($result) < 1){
 		$sql = format("insert into tb2(password, phone) values('{0}', '{1}')", $_POST["password"], $_POST["phone"]);
 		// echo $sql;
