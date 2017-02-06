@@ -10,6 +10,12 @@
 */	
 @import 'reset.scss';
 @import 'common.scss';	
+.top{
+	a{
+	displya:inline-block;
+	margin-left:20px;
+	}
+}
 header{
 	background:url(../img/head_bg.jpg) no-repeat center;height:210px;
 	position:relative;

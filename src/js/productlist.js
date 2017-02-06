@@ -29,7 +29,7 @@
 				var $ul = $('<ul/>').addClass('wrap');
 				$.each(res,function(idx,item){
 					
-					var $li = $('<li/>').addClass('inline').html('<div class="pic"><img src="'+item.src+'"/></div><p>' + item.price + '</p><p>成交：' + item.counts + '笔</p><p>' + item.name + '</p>');
+					var $li = $('<li/>').addClass('inline').html('<div class="pic"><img src="'+item.src+'"/></div><p>' + item.price + '</p><p>成交：' + item.counts + '笔</p><p>' + item.name + '</p>'+'<a href="productdetails.html">添加到购物车</a>');
 					$ul.append($li);
 				});
 				$('.goodlist').append($ul);
@@ -51,7 +51,7 @@
 					var $ul = $('<ul/>').addClass('wrap');
 					$.each(res,function(idx,item){
 						
-						var $li = $('<li/>').addClass('inline').html('<div class="pic"><img src="'+item.src+'"/></div><p>' + item.price + '</p><p>成交：' + item.counts + '笔</p><p>' + item.name + '</p>');
+						var $li = $('<li/>').addClass('inline').html('<div class="pic"><img src="'+item.src+'"/></div><p>' + item.price + '</p><p>成交：' + item.counts + '笔</p><p>' + item.name + '</p>'+'<a href="productdetails.html">添加到购物车</a>');
 						$ul.append($li);
 					});
 					$('.goodlist').append($ul);
