@@ -11,9 +11,19 @@
 @import 'reset.scss';
 @import 'common.scss';	
 .top{
+	background:#f5f4f4;
+	.t_nav{
+		float:right;
+		width:650px;
+		
+		li{
+			float:left;
+			margin-left:20px;
+		}
+	}
 	a{
-	displya:inline-block;
-	margin-left:20px;
+		displya:inline-block;
+		margin-left:20px;
 	}
 }
 header{
@@ -334,6 +344,19 @@ footer{
 		}
 	}
 }
+/*购物车*/
+.conmend{
+	.c_l{
+
+		li{
+			float:left;
+			margin-right:20px;
+			a{
+				display:block;
+			}
+		}
+	}
+}
 /*产品列表页*/
 .page{
 	text-align:center;
@@ -355,6 +378,40 @@ footer{
 .de_center{
 	position:relative;
 	top:0;
+	.qty{
+		span{
+			display:inline-block;
+			border:solid 1px;
+			width:30px;
+			height:30px;
+			line-height:30px;
+			background:pink;
+			color:black;
+			text-align:center;
+		}
+	}
+	.add2cart{
+		margin:20px 10px;
+		button{
+			background:red;
+			display:block;
+			width:100px;
+			height:40px;
+			line-height:30px;
+		}
+	}
+
+	.pay{
+		display:block;
+		width:80px;
+		height:50px;
+		line-height:50px;
+		boder:solid 1px black;
+		background:blue;
+		color:white;
+		text-align:center;
+		margin-left:10px;
+	}
 	h1{
 		background: url(http://www.zhongjiu.cn/Areas/Web/Images/price-info_bg.jpg);
 	    height: 56px;
@@ -363,6 +420,12 @@ footer{
 	    color:red;
 	}
 	.t{
+		.p-price{
+			color:#ee3e1b;
+			font-size: 26px;
+    		font-family: microsoft yahei;
+    		line-height: 30px;
+		}
 		background: url(http://www.zhongjiu.cn/Areas/Web/Images/price-info_bg.jpg);
 	}
 }

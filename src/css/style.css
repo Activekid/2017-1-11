@@ -45,6 +45,7 @@
 	top: 0;
 	overflow: hidden;
 	background-color: #454545;
+	z-index: 9999;
 }
 .magnifyingShow > img{
 	width: 900px;

@@ -60,6 +60,20 @@ a {
   overflow: hidden;
 }
 
+.top {
+  background: #f5f4f4;
+}
+
+.top .t_nav {
+  float: right;
+  width: 650px;
+}
+
+.top .t_nav li {
+  float: left;
+  margin-left: 20px;
+}
+
 .top a {
   displya: inline-block;
   margin-left: 20px;
@@ -430,6 +444,16 @@ footer .conect .copyright .beian {
   margin-top: 15px;
 }
 
+/*购物车*/
+.conmend .c_l li {
+  float: left;
+  margin-right: 20px;
+}
+
+.conmend .c_l li a {
+  display: block;
+}
+
 /*产品列表页*/
 .page {
   text-align: center;
@@ -456,6 +480,41 @@ footer .conect .copyright .beian {
   top: 0;
 }
 
+.de_center .qty span {
+  display: inline-block;
+  border: solid 1px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: pink;
+  color: black;
+  text-align: center;
+}
+
+.de_center .add2cart {
+  margin: 20px 10px;
+}
+
+.de_center .add2cart button {
+  background: red;
+  display: block;
+  width: 100px;
+  height: 40px;
+  line-height: 30px;
+}
+
+.de_center .pay {
+  display: block;
+  width: 80px;
+  height: 50px;
+  line-height: 50px;
+  boder: solid 1px black;
+  background: blue;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+}
+
 .de_center h1 {
   background: url(http://www.zhongjiu.cn/Areas/Web/Images/price-info_bg.jpg);
   height: 56px;
@@ -466,6 +525,13 @@ footer .conect .copyright .beian {
 
 .de_center .t {
   background: url(http://www.zhongjiu.cn/Areas/Web/Images/price-info_bg.jpg);
+}
+
+.de_center .t .p-price {
+  color: #ee3e1b;
+  font-size: 26px;
+  font-family: microsoft yahei;
+  line-height: 30px;
 }
 
 /*注册界面样式*/
