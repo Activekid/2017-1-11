@@ -1,5 +1,5 @@
-;(function($){
-	$(function(){
+requirejs(['js/config.js'],function(){
+	requirejs(['jquery','jquery.gdscarousel'],function($,gdscarousel){
 		$('.nav-bar').gdscarousel({
 			imglist:['img/banner1.jpg','img/banner2.jpg','img/banner3.jpg','img/banner4.jpg','img/banner5.jpg','img/banner6.jpg'],
 			page:'center',
@@ -30,10 +30,5 @@
 				})
 			})
 		}) 
-		/*$('.item').on('mouseenter',function() {
-			$('.f_nav').show();
-		}).on('mouseout',function() {
-			$('.f_nav').hide();
-		})*/
 	});
-})(jQuery);
+})

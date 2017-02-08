@@ -168,7 +168,7 @@ header .search-bar .hot-search a {
   height: 80;
   background-color: #3c4750;
   position: absolute;
-  left: 82px;
+  left: 40px;
 }
 
 .nav-bar .nav-content .category .mc a {
@@ -177,6 +177,19 @@ header .search-bar .hot-search a {
 
 .nav-bar .nav-content .category .mc .item {
   height: 81.5px;
+}
+
+.nav-bar .nav-content .category .mc .item .f_nav {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  top: 0px;
+  left: 200px;
+  width: 760px;
+  height: 489px;
+  background: #f5f5f5;
+  display: none;
 }
 
 .content_re {
