@@ -1,3 +1,4 @@
+//config相对html
 requirejs(['js/config.js'],function(){
 	requirejs(['jquery','jquery.gdscarousel'],function($,gdscarousel){
 		$('.nav-bar').gdscarousel({
