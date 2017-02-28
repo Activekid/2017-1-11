@@ -22,14 +22,19 @@ requirejs(['js/config.js'],function(){
 		var $item = $('.item');
 
 		$item.each(function(){
-			var $self = $(this);
-			var $ul = $self.children('ul');
-			$self.on('mouseenter',function() {
-				$ul.show();
-					$self.on('mouseout',function() {
-					$ul.hide();
-				})
-			})
-		}) 
+				var $self = $(this);
+				var $ul = $self.children('ul');
+				var $Sbul = $self.siblings().children('ul');
+				$self.on('mouseenter',function() {
+						
+						$Sbul.hide();
+						$ul.show();
+						
+					}).on('mouseleave',function() {
+							$ul.hide();
+							/*$Sbul.hide();*/
+						})	
+			
+			});
 	});
 })
